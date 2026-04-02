@@ -1,1 +1,0 @@
-# khareej.net
