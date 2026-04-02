@@ -1,17 +1,37 @@
-# بيئة التطوير
-node_modules/
+# 🔐 متغيرات البيئة (كلمات المرور، مفاتيح API)
 .env
+.env.local
+*.pem
+
+# 📦 مجلدات المكتبات (تُثبّت محليًا)
+node_modules/
+vendor/
+bower_components/
+
+# 🗑️ ملفات السجلات والمؤقتة
 *.log
+npm-debug.log*
+yarn-debug.log*
 .DS_Store
+Thumbs.db
 
-# قواعد البيانات (ملفات محلية فقط)
-*.sqlite
-dump.sql
-
-# محررات الأكواد
+# 💻 إعدادات المحررات الشخصية
 .vscode/
 .idea/
+*.swp
+*.swo
 
-# أنظمة التشغيل
-Thumbs.db
-ehthumbs.db
+# 🗄️ ملفات قاعدة البيانات المحلية
+*.sqlite
+*.db
+dump.sql
+backup/
+
+# 🌐 ملفات البناء (Build) - إذا استخدمتم أدوات مثل Webpack
+dist/
+build/
+*.min.js
+
+# 🖼️ صور مؤقتة من التصميم
+*.psd
+*.ai
